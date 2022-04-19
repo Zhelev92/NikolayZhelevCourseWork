@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="5" verbose="1" name="CourceWork"
+       annotations="JDK" parallel="tests">
+
+    <test name="AddToCartTest">
+        <classes>
+            <class name="qa.automation.AddToCartTest"/>
+        </classes>
+    </test>
+    <test name="SuccessfulLogin">
+        <classes>
+            <class name="qa.automation.SuccessfulLogin"/>
+        </classes>
+    </test>
+    <test name="UnsuccessfulLogin">
+        <classes>
+            <class name="qa.automation.UnsuccessfulLogin"/>
+        </classes>
+    </test>
+    <test name="ChekOutTest">
+        <classes>
+            <class name="qa.automation.CheckOutTest"/>
+        </classes>
+    </test>
+    <test name="ProblemUserTest">
+        <classes>
+            <class name="qa.automation.ProblemUserTest"/>
+        </classes>
+    </test>
+</suite>
